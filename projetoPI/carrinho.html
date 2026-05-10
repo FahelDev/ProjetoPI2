@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho | Farma7</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+
+    <a href="index.html"> <img src="imgs/logoFarma (1).png" alt="logo da Farma7"> </a>
+    
+    <nav>
+      <ul>
+        <li><a href="index.html">Voltar para Loja</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="carrinho">
+  <h2>Meu Carrinho</h2>
+  <ul id="lista-carrinho"></ul>
+  <p>Total: R$ <span id="total">0.00</span></p>
+
+      <div class="carrinho2">
+
+    <button class="btn-finalizar" onclick="direcionarCheck()">Finalizar compra</button>
+
+  </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Farma7. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    atualizarCarrinho(); // Atualiza carrinho ao carregar a página
+  </script>
+</body>
+</html>

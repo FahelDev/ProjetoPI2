@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promoções - Farma7</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"> <img src="imgs/logoFarma (1).png" alt="logo da Farma7"> </a>
+    <nav>
+      <ul>
+        <li><a href="medicamentos.html">Medicamentos</a></li>
+        <li><a href="vitaminas.html">Vitaminas</a></li>
+        <li><a href="beleza.html">Beleza</a></li>
+        <li><a href="higiene.html">Higiene</a></li>
+        <li><a href="promocoes.html">Promoções</a></li>
+      </ul>
+    </nav>
+    <div class="user-links">
+      <a href="login.html" class="btn-login">Entrar / Cadastrar</a>
+      <a href="carrinho.html" class="btn-login">Ver Carrinho</a>
+    </div>
+  </header>
+
+  <main>
+    <h2>Produtos em Promoção</h2>
+    <section class="produtos">
+
+      <article class="produto">
+        <img src="imgs/paracetamol.png" alt="Paracetamol">
+        <h3>Paracetamol 750mg</h3>
+        <p>Antes R$ 12,90 | Promoção R$ 9,90</p>
+        <button onclick="adicionarCarrinho('Paracetamol 750mg', 9.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/dipirona.png" alt="Dipirona">
+        <h3>Dipirona Sódica 500mg</h3>
+        <p>Antes R$ 9,50 | Promoção R$ 7,90</p>
+        <button onclick="adicionarCarrinho('Dipirona Sódica 500mg', 7.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/omerprazol.png" alt="Omeprazol">
+        <h3>Omeprazol 20mg</h3>
+        <p>Antes R$ 18,40 | Promoção R$ 14,90</p>
+        <button onclick="adicionarCarrinho('Omeprazol 20mg', 14.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/loratodina.png" alt="Loratadina">
+        <h3>Loratadina 10mg</h3>
+        <p>Antes R$ 11,20 | Promoção R$ 8,90</p>
+        <button onclick="adicionarCarrinho('Loratadina 10mg', 8.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/protetor_solar.png" alt="Protetor Solar">
+        <h3>Protetor Solar Facial FPS 50</h3>
+        <p>Antes R$ 38,00 | Promoção R$ 29,90</p>
+        <button onclick="adicionarCarrinho('Protetor Solar Facial FPS 50', 29.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/biore.png" alt="Protetor solar Bioré">
+        <h3>Protetor Solar Facial FPS 50 Bioré UV Perfect Milk 40ml</h3>
+        <p>Antes R$ 59,39 | Promoção R$ 45,00</p>
+        <button onclick="adicionarCarrinho('Protetor Solar Facial FPS 50 Bioré UV Perfect Milk 40ml', 45.00)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Farma7. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+    let total = parseFloat(localStorage.getItem("total")) || 0;
+
+    function adicionarCarrinho(nome, preco) {
+      const produtoExistente = carrinho.find(item => item.nome === nome);
+      if (produtoExistente) {
+        produtoExistente.quantidade += 1;
+      } else {
+        carrinho.push({ nome, preco, quantidade: 1 });
+      }
+      total = carrinho.reduce((acc, item) => acc + item.preco * item.quantidade, 0);
+      localStorage.setItem("carrinho", JSON.stringify(carrinho));
+      localStorage.setItem("total", total);
+      alert(`${nome} foi adicionado ao carrinho!`);
+    }
+  </script>
+</body>
+</html>

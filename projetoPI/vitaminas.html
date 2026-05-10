@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitaminas - Farma7</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <a href="index.html"> <img src="imgs/logoFarma (1).png" alt="logo da Farma7"> </a>
+    <nav>
+      <ul>
+        <li><a href="medicamentos.html">Medicamentos</a></li>
+        <li><a href="vitaminas.html">Vitaminas</a></li>
+        <li><a href="beleza.html">Beleza</a></li>
+        <li><a href="higiene.html">Higiene</a></li>
+        <li><a href="promocoes.html">Promoções</a></li>
+      </ul>
+    </nav>
+    <div class="user-links">
+      <a href="login.html" class="btn-login">Entrar / Cadastrar</a>
+      <a href="carrinho.html" class="btn-login">Ver Carrinho</a>
+    </div>
+  </header>
+
+  <!-- Banner principal -->
+  <section class="banner">
+    <img src="imgs/BannerVitaminas.png" alt="Vitaminas Farma7">
+  </section>
+
+  <main>
+    <h2>Vitaminas Disponíveis</h2>
+    <section class="produtos">
+
+      <article class="produto">
+        <img src="imgs/vitaminac.png" alt="Vitamina C">
+        <h3>Vitamina C 500mg</h3>
+        <p>Auxilia na imunidade e prevenção de gripes.</p>
+        <p><strong>R$ 24,90</strong></p>
+        <button onclick="adicionarCarrinho('Vitamina C 500mg', 24.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/vitaminaD.png" alt="Vitamina D">
+        <h3>Vitamina D 1000UI</h3>
+        <p>Ajuda na absorção de cálcio e fortalecimento dos ossos.</p>
+        <p><strong>R$ 29,90</strong></p>
+        <button onclick="adicionarCarrinho('Vitamina D 1000UI', 29.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/vitaminaB12.png" alt="Vitamina B12">
+        <h3>Vitamina B12 1000mcg</h3>
+        <p>Auxilia na produção de glóbulos vermelhos e energia.</p>
+        <p><strong>R$ 39,90</strong></p>
+        <button onclick="adicionarCarrinho('Vitamina B12 1000mcg', 39.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/daily.png" alt="Multivitamínico">
+        <h3>Multivitamínico Daily</h3>
+        <p>Suplemento completo para saúde diária.</p>
+        <p><strong>R$ 49,90</strong></p>
+        <button onclick="adicionarCarrinho('Multivitamínico Daily', 49.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/vitamminaE.png" alt="Vitamina E">
+        <h3>Vitamina E 400UI</h3>
+        <p>Antioxidante que ajuda na saúde da pele e coração.</p>
+        <p><strong>R$ 34,90</strong></p>
+        <button onclick="adicionarCarrinho('Vitamina E 400UI', 34.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/omega3.png" alt="Ômega 3">
+        <h3>Ômega 3 1000mg</h3>
+        <p>Auxilia na saúde cardiovascular e função cerebral.</p>
+        <p><strong>R$ 59,90</strong></p>
+        <button onclick="adicionarCarrinho('Ômega 3 1000mg', 59.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/calcio.png" alt="Cálcio">
+        <h3>Cálcio + Vitamina D</h3>
+        <p>Fortalecimento ósseo e prevenção de osteoporose.</p>
+        <p><strong>R$ 44,90</strong></p>
+        <button onclick="adicionarCarrinho('Cálcio + Vitamina D', 44.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/magnesio.png" alt="Magnésio">
+        <h3>Magnésio 400mg</h3>
+        <p>Auxilia na função muscular e relaxamento.</p>
+        <p><strong>R$ 39,50</strong></p>
+        <button onclick="adicionarCarrinho('Magnésio 400mg', 39.50)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/zinco.png" alt="Zinco">
+        <h3>Zinco 50mg</h3>
+        <p>Importante para imunidade e cicatrização.</p>
+        <p><strong>R$ 21,90</strong></p>
+        <button onclick="adicionarCarrinho('Zinco 50mg', 21.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/probiotico.png" alt="Probiótico">
+        <h3>Probiótico 10 bilhões UFC</h3>
+        <p>Ajuda no equilíbrio da flora intestinal.</p>
+        <p><strong>R$ 32,90</strong></p>
+        <button onclick="adicionarCarrinho('Probiótico 10 bilhões UFC', 32.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Farma7. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script do carrinho -->
+  <script>
+    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+    let total = parseFloat(localStorage.getItem("total")) || 0;
+
+    function adicionarCarrinho(nome, preco) {
+      const produtoExistente = carrinho.find(item => item.nome === nome);
+      if (produtoExistente) {
+        produtoExistente.quantidade += 1;
+      } else {
+        carrinho.push({ nome, preco, quantidade: 1 });
+      }
+      calcularTotal();
+      salvarCarrinho();
+      alert(`${nome} foi adicionado ao carrinho!`);
+    }
+
+    function calcularTotal() {
+      total = carrinho.reduce((acc, item) => acc + item.preco * item.quantidade, 0);
+    }
+
+    function salvarCarrinho() {
+      localStorage.setItem("carrinho", JSON.stringify(carrinho));
+      localStorage.setItem("total", total);
+    }
+  </script>
+</body>
+</html>

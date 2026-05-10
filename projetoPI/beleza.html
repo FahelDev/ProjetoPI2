@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beleza - Farma7</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"> <img src="imgs/logoFarma (1).png" alt="logo da Farma7"> </a>
+    <nav>
+      <ul>
+        <li><a href="medicamentos.html">Medicamentos</a></li>
+        <li><a href="vitaminas.html">Vitaminas</a></li>
+        <li><a href="beleza.html">Beleza</a></li>
+        <li><a href="higiene.html">Higiene</a></li>
+        <li><a href="promocoes.html">Promoções</a></li>
+      </ul>
+    </nav>
+    <div class="user-links">
+      <a href="login.html" class="btn-login">Entrar / Cadastrar</a>
+      <a href="carrinho.html" class="btn-login">Ver Carrinho</a>
+    </div>
+  </header>
+
+  <main>
+    <h2>Produtos de Beleza</h2>
+    <section class="produtos">
+      <article class="produto">
+        <img src="imgs/creme.png" alt="Creme Hidratante">
+        <h3>Creme Hidratante Facial Nivea</h3>
+        <p>Hidratação profunda para todos os tipos de pele.</p>
+        <p><strong>R$ 35,00</strong></p>
+        <button onclick="adicionarCarrinho('Creme Hidratante Facial', 35.00)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/base.png" alt="Base Líquida">
+        <h3>Base Líquida Matte</h3>
+        <p>Cobertura uniforme e acabamento natural.</p>
+        <p><strong>R$ 45,00</strong></p>
+        <button onclick="adicionarCarrinho('Base Líquida Matte', 45.00)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/batom.png" alt="Batom">
+        <h3>Batom Líquido Matte</h3>
+        <p>Alta durabilidade e cores intensas.</p>
+        <p><strong>R$ 25,50</strong></p>
+        <button onclick="adicionarCarrinho('Batom Líquido Matte', 25.50)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/shampoo.png" alt="Shampoo">
+        <h3>Shampoo Nutritivo</h3>
+        <p>Fortalece os fios e hidrata profundamente.</p>
+        <p><strong>R$ 28,00</strong></p>
+        <button onclick="adicionarCarrinho('Shampoo Nutritivo', 28.00)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/condicionador.png" alt="Condicionador">
+        <h3>Condicionador Hidratante</h3>
+        <p>Maciez e brilho para todos os tipos de cabelo.</p>
+        <p><strong>R$ 30,00</strong></p>
+        <button onclick="adicionarCarrinho('Condicionador Hidratante', 30.00)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/esmalte.png" alt="Esmalte">
+        <h3>Esmalte Vermelho</h3>
+        <p>Cor intensa e longa duração.</p>
+        <p><strong>R$ 15,00</strong></p>
+        <button onclick="adicionarCarrinho('Esmalte Vermelho', 15.00)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/loção_corporal.png" alt="Loção Corporal">
+        <h3>Loção Corporal Hidratante</h3>
+        <p>Hidratação profunda e aroma agradável.</p>
+        <p><strong>R$ 32,00</strong></p>
+        <button onclick="adicionarCarrinho('Loção Corporal Hidratante', 32.00)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/creme_maos.png" alt="Creme para Mãos">
+        <h3>Creme para Mãos</h3>
+        <p>Previne ressecamento e mantém a pele macia.</p>
+        <p><strong>R$ 20,00</strong></p>
+        <button onclick="adicionarCarrinho('Creme para Mãos', 20.00)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/protetor_solar.png" alt="Protetor Solar">
+        <h3>Protetor Solar Facial FPS 50</h3>
+        <p>Proteção alta contra raios UVA e UVB.</p>
+        <p><strong>R$ 38,00</strong></p>
+        <button onclick="adicionarCarrinho('Protetor Solar Facial FPS 50', 38.00)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/óleo_capilar.png" alt="Óleo Capilar">
+        <h3>Óleo Capilar Nutritivo</h3>
+        <p>Hidratação e brilho intenso para os fios.</p>
+        <p><strong>R$ 40,00</strong></p>
+        <button onclick="adicionarCarrinho('Óleo Capilar Nutritivo', 40.00)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Farma7. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+    let total = parseFloat(localStorage.getItem("total")) || 0;
+
+    function adicionarCarrinho(nome, preco) {
+      const produtoExistente = carrinho.find(item => item.nome === nome);
+      if (produtoExistente) {
+        produtoExistente.quantidade += 1;
+      } else {
+        carrinho.push({ nome, preco, quantidade: 1 });
+      }
+      total = carrinho.reduce((acc, item) => acc + item.preco * item.quantidade, 0);
+      localStorage.setItem("carrinho", JSON.stringify(carrinho));
+      localStorage.setItem("total", total);
+      alert(`${nome} foi adicionado ao carrinho!`);
+    }
+  </script>
+</body>
+</html>

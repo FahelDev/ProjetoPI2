@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicamentos - Farma7</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    
+    <a href="index.html"><img src="imgs/logoFarma (1).png" alt="logo da Farma7"></a>
+    <nav>
+      <ul>
+        <li><a href="medicamentos.html">Medicamentos</a></li>
+        <li><a href="vitaminas.html">Vitaminas</a></li>
+        <li><a href="beleza.html">Beleza</a></li>
+        <li><a href="higiene.html">Higiene</a></li>
+        <li><a href="promocoes.html">Promoções</a></li>
+      </ul>
+    </nav>
+    <div class="user-links">
+      <a href="login.html" class="btn-login">Entrar / Cadastrar</a>
+      <a href="carrinho.html" class="btn-login">Ver Carrinho</a>
+    </div>
+  </header>
+
+  <main>
+    <h2>Medicamentos Disponíveis</h2>
+    <section class="produtos">
+      <article class="produto">
+        <img src="imgs/paracetamol.png" alt="Paracetamol">
+        <h3>Paracetamol 750mg</h3>
+        <p>Analgésico e antitérmico.</p>
+        <p><strong>R$ 12,90</strong></p>
+        <button onclick="adicionarCarrinho('Paracetamol 750mg', 12.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/dipirona.png" alt="Dipirona">
+        <h3>Dipirona Sódica 500mg</h3>
+        <p>A Dipirona Sódica é à base de dipirona, utilizado no tratamento da dor e febre.</p>
+        <p><strong>R$ 9,50</strong></p>
+        <button onclick="adicionarCarrinho('Dipirona Sódica 500mg', 9.50)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/amoxicilana.png" alt="Amoxicilina">
+        <h3>Amoxicilina 500mg</h3>
+        <p>Antibiótico para infecções bacterianas.</p>
+        <p><strong>R$ 24,90</strong></p>
+        <button onclick="adicionarCarrinho('Amoxicilina 500mg', 24.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/ibuprofeno.png" alt="Ibuprofeno">
+        <h3>Ibuprofeno 400mg</h3>
+        <p>Anti-inflamatório e analgésico.</p>
+        <p><strong>R$ 15,90</strong></p>
+        <button onclick="adicionarCarrinho('Ibuprofeno 400mg', 15.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/loratodina.png" alt="Loratadina">
+        <h3>Loratadina 10mg</h3>
+        <p>Antialérgico para rinite e urticária.</p>
+        <p><strong>R$ 11,20</strong></p>
+        <button onclick="adicionarCarrinho('Loratadina 10mg', 11.20)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/omerprazol.png" alt="Omeprazol">
+        <h3>Omeprazol 20mg</h3>
+        <p>Indicado para azia, gastrite e refluxo.</p>
+        <p><strong>R$ 18,40</strong></p>
+        <button onclick="adicionarCarrinho('Omeprazol 20mg', 18.40)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/azitromicina.png" alt="Azitromicina">
+        <h3>Azitromicina 500mg</h3>
+        <p>Antibiótico de amplo espectro.</p>
+        <p><strong>R$ 32,00</strong></p>
+        <button onclick="adicionarCarrinho('Azitromicina 500mg', 32.00)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/losartana.png" alt="Losartana">
+        <h3>Losartana Potássica 50mg</h3>
+        <p>Tratamento da hipertensão arterial.</p>
+        <p><strong>R$ 22,00</strong></p>
+        <button onclick="adicionarCarrinho('Losartana Potássica 50mg', 22.00)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/metformina.png" alt="Metformina">
+        <h3>Metformina 850mg</h3>
+        <p>Controle da glicemia em diabetes tipo 2.</p>
+        <p><strong>R$ 19,90</strong></p>
+        <button onclick="adicionarCarrinho('Metformina 850mg', 19.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/clonazepam.png" alt="Clonazepam">
+        <h3>Clonazepam 2mg</h3>
+        <p>Ansiolítico de uso controlado.</p>
+        <p><strong>R$ 45,00</strong></p>
+        <button onclick="adicionarCarrinho('Clonazepam 2mg', 45.00)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Farma7. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

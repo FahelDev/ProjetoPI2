@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Higiene - Farma7</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html"> <img src="imgs/logoFarma (1).png" alt="logo da Farma7"> </a>
+    <nav>
+      <ul>
+        <li><a href="medicamentos.html">Medicamentos</a></li>
+        <li><a href="vitaminas.html">Vitaminas</a></li>
+        <li><a href="beleza.html">Beleza</a></li>
+        <li><a href="higiene.html">Higiene</a></li>
+        <li><a href="promocoes.html">Promoções</a></li>
+      </ul>
+    </nav>
+    <div class="user-links">
+      <a href="login.html" class="btn-login">Entrar / Cadastrar</a>
+      <a href="carrinho.html" class="btn-login">Ver Carrinho</a>
+    </div>
+  </header>
+
+
+  <main>
+    <h2>Produtos de Higiene</h2>
+    <section class="produtos">
+
+      <article class="produto">
+        <img src="imgs/alcool.png" alt="Álcool em Gel 70%">
+        <h3>Álcool Líquido Sulmar 70%</h3>
+        <p>Proteção e higiene para suas mãos.</p>
+        <p><strong>R$ 9,99</strong></p>
+        <button onclick="adicionarCarrinho('Álcool Líquido Sulmar 70%', 9.99)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/sabonete.png" alt="Sabonete">
+        <h3>Sabonete Líquido Neutro 250ml</h3>
+        <p>Higiene diária e suave para todos os tipos de pele.</p>
+        <p><strong>R$ 12,50</strong></p>
+        <button onclick="adicionarCarrinho('Sabonete Líquido Neutro 250ml', 12.50)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/desodorante.png" alt="Desodorante">
+        <h3>Desodorante Aerosol 150ml</h3>
+        <p>Proteção duradoura contra odores e transpiração.</p>
+        <p><strong>R$ 18,90</strong></p>
+        <button onclick="adicionarCarrinho('Desodorante Aerosol 150ml', 18.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/papel_higienico.png" alt="Papel Higiênico">
+        <h3>Papel Higiênico 4 rolos</h3>
+        <p>Macio, resistente e confortável.</p>
+        <p><strong>R$ 5,99</strong></p>
+        <button onclick="adicionarCarrinho('Papel Higiênico 4 rolos', 5.99)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/creme_dental.png" alt="Creme Dental">
+        <h3>Creme Dental Sorriso Branco 90g</h3>
+        <p>Protege os dentes e garante hálito fresco.</p>
+        <p><strong>R$ 7,50</strong></p>
+        <button onclick="adicionarCarrinho('Creme Dental Sorriso Branco 90g', 7.50)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/escova.png" alt="Escova de Dente">
+        <h3>Escova de Dente Manual</h3>
+        <p>Limpeza eficaz e cerdas macias.</p>
+        <p><strong>R$ 6,99</strong></p>
+        <button onclick="adicionarCarrinho('Escova de Dente Manual', 6.99)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/shampoo.png" alt="Shampoo">
+        <h3>Shampoo Neutro 200ml</h3>
+        <p>Limpeza suave e hidratação dos fios.</p>
+        <p><strong>R$ 14,90</strong></p>
+        <button onclick="adicionarCarrinho('Shampoo Neutro 200ml', 14.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/condicionador.png" alt="Condicionador">
+        <h3>Condicionador Neutro 350ml</h3>
+        <p>Maciez e brilho para todos os tipos de cabelo.</p>
+        <p><strong>R$ 15,90</strong></p>
+        <button onclick="adicionarCarrinho('Condicionador Neutro 350ml', 15.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/contonete.png" alt="Cotonete">
+        <h3>Cotonete Higiênico 300 unidades</h3>
+        <p>Cuidados delicados e higiene pessoal.</p>
+        <p><strong>R$ 23,99</strong></p>
+        <button onclick="adicionarCarrinho('Cotonete Higiênico 300 unidades', 23.99)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/lenço.png" alt="Lenço Umedecido">
+        <h3>Lenço Umedecido 50 unidades</h3>
+        <p>Limpeza prática e rápida para mãos e rosto.</p>
+        <p><strong>R$ 12,90</strong></p>
+        <button onclick="adicionarCarrinho('Lenço Umedecido 50 unidades', 12.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Farma7. Todos os direitos reservados.</p>
+  </footer>
+
+
+  <script>
+    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+    let total = parseFloat(localStorage.getItem("total")) || 0;
+
+    function adicionarCarrinho(nome, preco) {
+      const produtoExistente = carrinho.find(item => item.nome === nome);
+      if (produtoExistente) {
+        produtoExistente.quantidade += 1;
+      } else {
+        carrinho.push({ nome, preco, quantidade: 1 });
+      }
+      calcularTotal();
+      salvarCarrinho();
+      alert(`${nome} foi adicionado ao carrinho!`);
+    }
+
+    function calcularTotal() {
+      total = carrinho.reduce((acc, item) => acc + item.preco * item.quantidade, 0);
+    }
+
+    function salvarCarrinho() {
+      localStorage.setItem("carrinho", JSON.stringify(carrinho));
+      localStorage.setItem("total", total);
+    }
+  </script>
+</body>
+</html>

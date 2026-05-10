@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farma7</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css"> <!-- Se quiser separar o CSS -->
+</head>
+<body>
+  <header>
+    <a href="index.html"> <img src="imgs/logoFarma (1).png" alt="logo da Farma7"> </a>
+    <nav>
+      <ul>
+        <li><a href="medicamentos.html">Medicamentos</a></li>
+        <li><a href="vitaminas.html">Vitaminas</a></li>
+        <li><a href="beleza.html">Beleza</a></li>
+        <li><a href="higiene.html">Higiene</a></li>
+        <li><a href="promocoes.html">Promoções</a></li>
+      </ul>
+    </nav>
+    <div class="user-links">
+      <a href="login.html" class="btn-login">Entrar / Cadastrar</a>
+      <a href="carrinho.html" class="btn-login">Ver Carrinho</a>
+    </div>
+  </header>
+
+  <!-- Banner principal -->
+  <section class="banner">
+    <img src="imgs/banner1Farma.svg" alt="Promoções da Farma7">
+  </section>
+
+  <!-- Banner principal -->
+
+  <main>
+    <h2>Produtos em Destaque</h2>
+    <section class="produtos">
+
+      <article class="produto">
+        <img src="imgs/tadalafila-5mg.png" alt="Tadalafila 5mg">
+        <h3>Tadalafila de 5mg</h3>
+        <p>A tadalafila é indicada para o tratamento da disfunção erétil (DE).</p>
+        <p><strong>R$ 58,99</strong></p>
+        <button onclick="adicionarCarrinho('Tadalafila de 5mg', 58.99)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/JONTEX.PNG" alt="Camisinha">
+        <h3>Preservativo Jontex</h3>
+        <p>Jontex possui benzocaína reduzindo a sensibilidade e permitindo que você aproveite a relação por mais tempo.</p>
+        <p><strong>R$ 29,90</strong></p>
+        <button onclick="adicionarCarrinho('Camisinha Jontex', 29.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/Shampocr7.jpg" alt="Shampoo Anticaspa">
+        <h3>Shampoo Anticaspa Limpeza Profunda 400ml</h3>
+        <p>Desenvolvido para homens que praticam esportes.</p>
+        <p><strong>R$ 27,90</strong></p>
+        <button onclick="adicionarCarrinho('Shampoo Anticaspa Limpeza Profunda 400ml', 27.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/alcool.png" alt="Álcool em Gel 70%">
+        <h3>Álcool Líquido Sulmar 70%</h3>
+        <p>Proteção e higiene para suas mãos.</p>
+        <p><strong>R$ 9,99</strong></p>
+        <button onclick="adicionarCarrinho('Álcool Líquido Sulmar 70%', 9.99)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/ozempic.png" alt="Ozempic">
+        <h3>Ozempic 1mg Solução Injetável 3ml + 4 agulhas - Geladeira</h3>
+        <p>Medicamento de uso controlado.</p>
+        <p><strong>R$ 999,00</strong></p>
+        <button onclick="adicionarCarrinho('Ozempic 1mg Solução Injetável 3ml + 4 agulhas', 999.00)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/cimegripe.png" alt="Cimegripe">
+        <h3>Cimegripe C + Zinco 10 Comprimidos Efervescentes</h3>
+        <p>Alívio dos sintomas de gripes e resfriados.</p>
+        <p><strong>R$ 14,90</strong></p>
+        <button onclick="adicionarCarrinho('Cimegripe C + Zinco 10 Comprimidos Efervescentes', 14.90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/desodorante.png" alt="Desodorante">
+        <h3>Desodorante Antitranspirante Flor de Lavanda Feminino 72h</h3>
+        <p>Proteção e higiene para suas mãos.</p>
+        <p><strong>R$ 21,89</strong></p>
+        <button onclick="adicionarCarrinho('Cimegripe C + Zinco 10 Comprimidos Efervescentes', 21,89)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/fisiogel.png" alt="Cimegripe">
+        <h3>Creme Hidratante Corporal Fisiogel Hipoalergênico 450g</h3>
+        <p>Creme hidratante corporal de uso diário.</p>
+        <p><strong>R$ 66,90</strong></p>
+        <button onclick="adicionarCarrinho('Cimegripe C + Zinco 10 Comprimidos Efervescentes', 66,90)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Produtos mais comprados</h2>
+    <section class="produtos">
+
+      <article class="produto">
+        <img src="imgs/novalgina.png" alt="Novalgina">
+        <h3>Novalgina Dipirona 1g 20 comprimidos</h3>
+        <p>Alivia dores intensas e reduz a febre.</p>
+        <p><strong>R$ 37,99</strong></p>
+        <button onclick="adicionarCarrinho('Novalgina Dipirona 1g 20 comprimidos', 37.99)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/biore.png" alt="Protetor solar Bioré">
+        <h3>Protetor Solar Facial FPS 50 Bioré UV Perfect Milk 40ml</h3>
+        <p>Protetor solar facial e corporal FPS 50.</p>
+        <p><strong>R$ 59,39</strong></p>
+        <button onclick="adicionarCarrinho('Protetor Solar Facial FPS 50 Bioré UV Perfect Milk 40ml', 59.39)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/escova.png" alt="Escova elétrica">
+        <h3>Escova de Dente Elétrica Oral-B PRO Clean</h3>
+        <p>Limpeza profunda e suave.</p>
+        <p><strong>R$ 104,49</strong></p>
+        <button onclick="adicionarCarrinho('Escova de Dente Elétrica Oral-B PRO Clean', 104.49)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+      <article class="produto">
+        <img src="imgs/dorflex.png" alt="Dorflex">
+        <h3>Dorflex Analgésico e Relaxante Muscular 36 comprimidos</h3>
+        <p>Alivia dores associadas a contraturas musculares.</p>
+        <p><strong>R$ 19,99</strong></p>
+        <button onclick="adicionarCarrinho('Dorflex Analgésico e Relaxante Muscular 36 comprimidos', 19.99)">Adicionar ao carrinho</button>
+        <button>Comprar</button>
+      </article>
+
+    </section>
+  </main>
+
+<section class="banner">
+    <img src="imgs/Banner2principal.png" alt="Promoções da Farma7">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Farma7. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
