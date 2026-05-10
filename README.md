@@ -1,4 +1,4 @@
-#  ProjetoPI2 - 🚀 Projeto Acadêmico – Farma7 🚀
+#  ProjetoPI 2º Semestre - Projeto Acadêmico – Farma7
 
 O Farma7 é um projeto acadêmico desenvolvido com o objetivo de simular um sistema de e-commerce farmacêutico, aplicando na prática conceitos de desenvolvimento front-end e back-end.
 
